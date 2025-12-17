@@ -94,4 +94,3 @@ const AcademicsCharacter: React.FC = () => {
 };
 
 export default AcademicsCharacter;
-

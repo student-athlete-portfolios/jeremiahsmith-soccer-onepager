@@ -22,7 +22,7 @@ const Appraisals: React.FC = () => {
   ];
 
   return (
-    <section id="appraisals" className="py-24 bg-[#0b0f19] relative">
+    <section id="appraisals" className="py-12 bg-[#0b0f19] relative">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
             <span className="text-plaon-pink font-bold tracking-widest uppercase mb-2 block">Recommendations</span>

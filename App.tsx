@@ -1,11 +1,12 @@
 import React from 'react';
 import Header from './components/Header';
 import Hero from './components/Hero';
-import MatchSchedule from './components/MatchSchedule';
-import TeamStandings from './components/TeamStandings';
-import NewsSection from './components/NewsSection';
+import PerformanceStats from './components/PerformanceStats';
+import AcademicsCharacter from './components/AcademicsCharacter';
+import Highlights from './components/Highlights';
 import Footer from './components/Footer';
-import { Match, Team, NewsItem } from './types';
+import Appraisals from './components/Appraisals';
+import { Match, Team } from './types';
 
 // --- MOCK DATA ---
 
@@ -47,29 +48,29 @@ const MOCK_MATCHES: Match[] = [
   }
 ];
 
-const MOCK_NEWS: NewsItem[] = [
+const MOCK_HIGHLIGHTS = [
   {
     id: 'n1',
     title: 'Championship Finals: What to Expect from the Clash',
-    category: 'Analysis',
+    description: 'An in-depth analysis of the upcoming championship finals and what fans can expect from this highly anticipated clash.',
     date: 'October 25, 2024',
-    author: 'John Doe',
+    match: 'Championship Finals',
     image: 'https://images.unsplash.com/photo-1517466787929-bc90951d0974?q=80&w=1000&auto=format&fit=crop'
   },
   {
     id: 'n2',
     title: 'Top 5 Rising Stars to Watch This Season',
-    category: 'Players',
+    description: 'Discover the emerging talents making waves in the league this season with their exceptional performances.',
     date: 'October 24, 2024',
-    author: 'Sarah Smith',
+    match: 'Season Highlights',
     image: 'https://images.unsplash.com/photo-1522770179533-24471fcdba45?q=80&w=1000&auto=format&fit=crop'
   },
   {
     id: 'n3',
     title: 'New Stadium Reveal: The Future of Football Infrastructure',
-    category: 'Venue',
+    description: 'A look at the cutting-edge stadium design that represents the future of football infrastructure and fan experience.',
     date: 'October 22, 2024',
-    author: 'Mike Johnson',
+    match: 'Stadium Tour',
     image: 'https://images.unsplash.com/photo-1504454172868-9583784a66e9?q=80&w=1000&auto=format&fit=crop'
   }
 ];
@@ -80,9 +81,10 @@ const App: React.FC = () => {
       <Header />
       <main>
         <Hero />
-        <MatchSchedule matches={MOCK_MATCHES} />
-        <TeamStandings teams={MOCK_TEAMS} />
-        <NewsSection news={MOCK_NEWS} />
+        <PerformanceStats />
+        <AcademicsCharacter />
+        <Highlights highlights={MOCK_HIGHLIGHTS} />
+        <Appraisals />
       </main>
       <Footer />
     </div>
