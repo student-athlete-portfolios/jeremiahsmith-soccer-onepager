@@ -14,6 +14,7 @@ const PerformanceStats: React.FC = () => {
     { id: '3', value: '18', label: 'ASSISTS' },
     { id: '4', value: '46', label: 'POINTS' },
     { id: '5', value: '1.45', label: 'G/A PER MATCH' },
+    { id: '6', value: '28', label: 'SHOTS ON GOAL' },
   ];
 
   const midfieldMetrics: PerformanceStat[] = [
@@ -25,7 +26,7 @@ const PerformanceStats: React.FC = () => {
   return (
     <section id="performance" className="py-24 bg-[#0b0f19] relative">
       <div className="container mx-auto px-4">
-        <div className="flex flex-col md:flex-row justify-between items-end mb-8 gap-4">
+        <div className="flex flex-col md:flex-row justify-between items-start mb-8 gap-4">
             <div>
                 <span className="text-plaon-pink font-bold tracking-widest uppercase mb-2 block">Tournament Schedule</span>
                 <h2 className="text-4xl md:text-5xl font-display font-bold uppercase">Performance <span className="text-transparent bg-clip-text bg-gradient-to-r from-plaon-pink to-plaon-accent">Stats</span></h2>
@@ -40,7 +41,7 @@ const PerformanceStats: React.FC = () => {
         </div>
 
         {/* Performance Stats Section */}
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 mb-12">
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6 mb-12">
           {performanceStats.map((stat) => (
             <div key={stat.id} className="relative group">
               <div className="absolute inset-0 bg-gradient-to-r from-plaon-accent/20 to-plaon-pink/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-sm"></div>

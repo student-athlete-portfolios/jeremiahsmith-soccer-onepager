@@ -55,7 +55,7 @@ const MOCK_HIGHLIGHTS = [
     description: 'An in-depth analysis of the upcoming championship finals and what fans can expect from this highly anticipated clash.',
     date: 'October 25, 2024',
     match: 'Championship Finals',
-    image: 'https://images.unsplash.com/photo-1517466787929-bc90951d0974?q=80&w=1000&auto=format&fit=crop'
+    image: 'https://images.unsplash.com/photo-1574629810360-7efbbe195018?q=80&w=1000&auto=format&fit=crop'
   },
   {
     id: 'n2',
@@ -63,7 +63,7 @@ const MOCK_HIGHLIGHTS = [
     description: 'Discover the emerging talents making waves in the league this season with their exceptional performances.',
     date: 'October 24, 2024',
     match: 'Season Highlights',
-    image: 'https://images.unsplash.com/photo-1522770179533-24471fcdba45?q=80&w=1000&auto=format&fit=crop'
+    image: 'https://images.unsplash.com/photo-1579952363873-27f3bade9f55?q=80&w=1000&auto=format&fit=crop'
   },
   {
     id: 'n3',
@@ -71,7 +71,7 @@ const MOCK_HIGHLIGHTS = [
     description: 'A look at the cutting-edge stadium design that represents the future of football infrastructure and fan experience.',
     date: 'October 22, 2024',
     match: 'Stadium Tour',
-    image: 'https://images.unsplash.com/photo-1504454172868-9583784a66e9?q=80&w=1000&auto=format&fit=crop'
+    image: 'https://images.unsplash.com/photo-1461896836934-ffe607ba8211?q=80&w=1000&auto=format&fit=crop'
   }
 ];
 
