@@ -1,45 +1,31 @@
-import React, { useState, useEffect } from 'react';
-import { Menu, X, Search, ShoppingBag } from 'lucide-react';
+import React, { useState } from 'react';
+import { Menu, X } from 'lucide-react';
 
 const Header: React.FC = () => {
-  const [isScrolled, setIsScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      setIsScrolled(window.scrollY > 50);
-    };
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
 
   const navLinks = [
     { name: 'HOME', href: '#' },
-    { name: 'MATCHES', href: '#matches' },
-    { name: 'STANDINGS', href: '#standings' },
-    { name: 'NEWS', href: '#news' },
-    { name: 'CONTACT', href: '#contact' },
+    { name: 'PERFORMANCE', href: '#performance' },
+    { name: 'ACADEMICS', href: '#academics' },
+    { name: 'HIGHLIGHTS', href: '#highlights' },
+    { name: 'APPRAISALS', href: '#appraisals' },
   ];
 
   return (
     <header 
-      className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${
-        isScrolled ? 'bg-[#0b0f19]/95 backdrop-blur-md border-b border-white/10' : 'bg-transparent'
-      }`}
+      className="fixed top-0 left-0 w-full z-50 bg-[#0b0f19]/95 backdrop-blur-md border-b border-white/10"
     >
       <div className="container mx-auto px-4 lg:px-8">
         <div className="flex items-center justify-between h-24">
           {/* Logo */}
           <div className="flex-shrink-0 flex items-center gap-2">
-            <div className="w-10 h-10 bg-gradient-to-br from-plaon-pink to-plaon-accent rotate-45 flex items-center justify-center rounded-sm">
-                <span className="text-white font-display font-bold text-2xl -rotate-45">P</span>
-            </div>
             <span className="text-3xl font-display font-bold tracking-wider text-white">
-              PLAON
+              Jeremiah Smith
             </span>
           </div>
 
-          {/* Desktop Nav */}
+          {/* Desktop Nav - Moved to the right */}
           <nav className="hidden md:flex space-x-8">
             {navLinks.map((link) => (
               <a
@@ -52,18 +38,6 @@ const Header: React.FC = () => {
               </a>
             ))}
           </nav>
-
-          {/* Actions */}
-          <div className="hidden md:flex items-center space-x-6">
-            <button className="text-white hover:text-plaon-accent transition-colors">
-              <Search size={20} />
-            </button>
-            <div className="w-px h-6 bg-white/20"></div>
-            <button className="text-white hover:text-plaon-accent transition-colors relative">
-              <ShoppingBag size={20} />
-              <span className="absolute -top-1 -right-1 w-4 h-4 bg-plaon-pink rounded-full text-[10px] flex items-center justify-center">0</span>
-            </button>
-          </div>
 
           {/* Mobile Menu Button */}
           <button 

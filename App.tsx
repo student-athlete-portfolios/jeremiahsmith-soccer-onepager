@@ -51,26 +51,26 @@ const MOCK_MATCHES: Match[] = [
 const MOCK_HIGHLIGHTS = [
   {
     id: 'n1',
-    title: 'Championship Finals: What to Expect from the Clash',
-    description: 'An in-depth analysis of the upcoming championship finals and what fans can expect from this highly anticipated clash.',
+    title: 'Game-Winning Goal in Overtime',
+    description: 'Scored the decisive goal in the 95th minute with a powerful strike from outside the box, securing a 3-2 victory in the regional championship quarterfinals.',
     date: 'October 25, 2024',
-    match: 'Championship Finals',
+    match: 'vs. Central High',
     image: 'https://images.unsplash.com/photo-1574629810360-7efbbe195018?q=80&w=1000&auto=format&fit=crop'
   },
   {
     id: 'n2',
-    title: 'Top 5 Rising Stars to Watch This Season',
-    description: 'Discover the emerging talents making waves in the league this season with their exceptional performances.',
+    title: 'Perfect Through Ball Assist',
+    description: 'Delivered a pinpoint 40-yard through ball that split the defense, setting up the winning goal in the state semifinals. The pass showcased exceptional vision and technical precision.',
     date: 'October 24, 2024',
-    match: 'Season Highlights',
+    match: 'vs. Westfield Academy',
     image: 'https://images.unsplash.com/photo-1579952363873-27f3bade9f55?q=80&w=1000&auto=format&fit=crop'
   },
   {
     id: 'n3',
-    title: 'New Stadium Reveal: The Future of Football Infrastructure',
-    description: 'A look at the cutting-edge stadium design that represents the future of football infrastructure and fan experience.',
+    title: 'Defensive Interception & Counter Attack',
+    description: 'Intercepted a pass in the midfield, dribbled past three defenders, and assisted the opening goal within 12 seconds. A textbook example of turning defense into offense.',
     date: 'October 22, 2024',
-    match: 'Stadium Tour',
+    match: 'vs. Riverside Prep',
     image: 'https://images.unsplash.com/photo-1461896836934-ffe607ba8211?q=80&w=1000&auto=format&fit=crop'
   }
 ];
