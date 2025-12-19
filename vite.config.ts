@@ -4,11 +4,10 @@ import react from '@vitejs/plugin-react';
 
 export default defineConfig(({ mode }) => {
     const env = loadEnv(mode, '.', '');
-    // For GitHub Pages, use the repository name as base path
-    // Change this to '/' if using a custom domain or if repo name is different
-    const base = process.env.GITHUB_PAGES === 'true' ? '/jeremiahsmith-soccer-onepager/' : '/';
+    // For GitHub Pages deployment, always use the repository name as base path
+    // This ensures assets load correctly from the subdirectory
     return {
-      base,
+      base: '/jeremiahsmith-soccer-onepager/',
       server: {
         port: 3000,
         host: '0.0.0.0',
